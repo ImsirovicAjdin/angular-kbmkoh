@@ -6,6 +6,14 @@ import { Component, Input, OnInit } from '@angular/core'
     <hr>
   `
 })
-export class AppChildComponent {
+export class AppChildComponent implements OnInit {
   @Input() car;
+
+  logCars() {
+    console.log(this.car);
+  }
+
+  ngOnInit() {
+    this.logCars();
+  }
 }
