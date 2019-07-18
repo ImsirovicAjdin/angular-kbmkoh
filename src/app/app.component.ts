@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     <div>
       Parent Component
     </div>
-    <app-child></app-child>
+    <app-child *ngFor="let vehicle of vehicles" [car]="vehicle"></app-child>
   `
 })
 export class AppComponent  {
