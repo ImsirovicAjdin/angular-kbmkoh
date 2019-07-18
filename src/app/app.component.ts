@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
     <div>
       Parent Component
     </div>
+    <app-child></app-child>
   `
 })
 export class AppComponent  {
